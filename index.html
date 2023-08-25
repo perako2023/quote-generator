@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="main-box">
+      <h1>Quote of the Day</h1>
+      <div class="content-box">
+        <div class="quote-area">
+          <i class="fa-solid fa-quote-left"></i>
+          <p data-js="quote" class="quote">
+            A wise man can learn more from a foolish question than a fool can
+            learn from a wise answer.
+          </p>
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+
+        <p data-js="author" class="author">&mdash; Bruce Lee</p>
+      </div>
+
+      <div class="controls-box">
+        <div>
+          <i
+            data-js="speech"
+            class="control speech fa-solid fa-volume-high"
+          ></i>
+          <i data-js="copy" class="control copy fas fa-copy"></i>
+          <i data-js="twitter" class="control twitter fab fa-twitter"></i>
+        </div>
+        <div>
+          <!-- <i class="control save fa-solid fa-bookmark"></i> -->
+          <button data-js="new-quote" class="control new-quote">
+            New Quote
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
